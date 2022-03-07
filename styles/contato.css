@@ -111,6 +111,27 @@ footer p {
 
 @media (max-width: 400px) {
   .contato {
+    width: 300px;
+  }
+
+  .contato-menssagem {
     width: 200px;
+    font-size: 0.8rem;
+  }
+
+  .contato-dados {
+    width: 300px;
+    font-size: 0.8rem;
+  }
+  .contato-dado {
+    justify-content: center;
+  }
+
+  .contato-links {
+    justify-content: center;
+  }
+  footer p {
+    font-size: 0.6rem;
+    padding-bottom: 5px;
   }
 }

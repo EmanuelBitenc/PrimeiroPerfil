@@ -133,6 +133,10 @@
   .formacao {
     max-width: 300px;
   }
+
+  .container-formacao {
+    padding: 80px 0px 10px 0px;
+  }
   .titulo {
     font-size: 2rem;
   }

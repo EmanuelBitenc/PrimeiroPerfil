@@ -199,7 +199,7 @@
 
   .pacote {
     width: 300px;
-    margin: 0 auto;
+    margin: 15px auto;
     background-color: #fff;
     border: 0px;
 
@@ -223,6 +223,7 @@
   }
 
   .experiencia {
-    max-width: 300px;
+    margin-bottom: 80px;
+    width: 300px;
   }
 }
