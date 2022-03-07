@@ -1,0 +1,139 @@
+.container-formacao {
+  background-color: #181818;
+  padding: 80px 0px;
+  width: 100%;
+}
+.formacao {
+  margin: 0px 140px 0px 140px;
+}
+
+.formacao .pacote-intro {
+  color: #a3a3a3;
+}
+
+.formacao .pacote-intro strong {
+  color: #fff;
+}
+
+.formacao .titulo {
+  color: #000;
+}
+
+.forms {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form {
+  width: 190px;
+  height: 190px;
+  background: #090909;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(255, 255, 255, 0.1);
+
+  padding: 15px 18px;
+  display: grid;
+  grid-template-rows: 40px 60px 40px;
+  gap: 0px;
+}
+
+.form-tipo {
+  font-size: 14px;
+  color: #a3a3a3;
+  align-self: center;
+}
+
+.form-nome {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 19px;
+  max-width: 150px;
+  color: #ffffff;
+  position: relative;
+}
+.form-insti {
+  font-size: 1rem;
+  line-height: 20px;
+  color: #a3a3a3;
+  align-self: end;
+}
+
+.form-nome::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(180deg, #5076e9 0%, #193a9d 100%);
+
+  position: absolute;
+  left: -22px;
+  top: 4px;
+}
+
+@media (max-width: 1300px) {
+  .formacao {
+    margin: 0px auto;
+    max-width: 1015px;
+    padding: 0px;
+  }
+
+  .formacao .titulo {
+    color: rgb(196, 196, 196);
+  }
+
+  .forms {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    justify-items: center;
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .forms {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 800px) {
+  .forms {
+    display: block;
+  }
+
+  .form {
+    width: 400px;
+    margin: 30px auto;
+  }
+
+  .form {
+    grid-template-rows: repeat(3, 30px);
+    height: 120px;
+  }
+  .form-nome {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 620px) {
+  .formacao {
+    max-width: 450px;
+  }
+  .form {
+    width: 380px;
+  }
+}
+
+@media (max-width: 400px) {
+  .form {
+    width: 300px;
+  }
+  .formacao {
+    max-width: 300px;
+  }
+  .titulo {
+    font-size: 2rem;
+  }
+}

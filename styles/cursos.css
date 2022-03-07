@@ -1,0 +1,95 @@
+.cursos-container {
+  margin: 80px 0px 0px 0px;
+  position: relative;
+}
+
+.cursos-container .icone {
+  position: absolute;
+  left: -35px;
+  top: -3.5px;
+}
+
+.cursos-titulo {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #8f8f8f;
+  margin-bottom: 10px;
+  position: relative;
+}
+.cursos-titulo::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(../img/cursos.svg);
+
+  position: absolute;
+  left: -36px;
+  top: -4px;
+}
+
+.curso {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.curso p {
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.curso .curso-detalhe {
+  margin: auto 0px;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+}
+@media (max-width: 1300px) {
+  .cursos-container {
+    max-width: 500px;
+    margin: 80px auto;
+  }
+
+  .curso .curso-detalhe {
+    width: 2px;
+    height: 2px;
+  }
+}
+
+@media (max-width: 800px) {
+  .cursos-container {
+    max-width: 400px;
+  }
+  .curso {
+    display: block;
+  }
+
+  .curso p {
+    line-height: 25px;
+    list-style: circle;
+  }
+  .curso p::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 2px;
+    background-color: white;
+
+    position: absolute;
+    left: -15px;
+    margin: 10px 0px;
+  }
+}
+
+@media (max-width: 550px) {
+  .cursos-container {
+    width: 230px;
+  }
+  .container-formacao {
+    padding: 80px auto;
+    padding-bottom: 10px;
+  }
+}

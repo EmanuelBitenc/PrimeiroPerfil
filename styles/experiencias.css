@@ -1,0 +1,228 @@
+.painel {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 350px 1fr;
+  gap: 20px 100px;
+}
+.painel-tamanho {
+  margin: 80px 140px;
+  max-width: 1120px;
+}
+.h2 {
+  grid-row: 1/5;
+  align-self: center;
+  margin: 0px;
+}
+
+.experiencia .titulo {
+  color: #cacaca;
+}
+
+.titulo {
+  font-family: Flamenco, Arial, sans-serif;
+  font-size: 8rem;
+  text-transform: uppercase;
+
+  word-break: break-all;
+  width: 6ch;
+}
+.nome {
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 20px;
+  color: #000000;
+  margin: 0px 0px 10px;
+}
+
+.pacote {
+  grid-column: 2;
+  background: #f2f2f2;
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+
+  padding: 10px 15px;
+  position: relative;
+  display: grid;
+  font-size: 0.9rem;
+  gap: 20px;
+  grid-template-columns: 1fr 250px;
+  min-height: 100px;
+}
+.pacote::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(180deg, #5076e9 0%, #193a9d 100%);
+
+  position: absolute;
+  left: -3px;
+  top: 10px;
+}
+
+.pacote ul {
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.pacote ul li {
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.pacote-intro {
+  padding: 20px;
+  max-width: 610px;
+}
+
+.pacote-intro p {
+  font-size: 1.1rem;
+}
+
+.experiencia .pacote-intro p {
+  color: #525252;
+}
+.pacote-intro strong {
+  font-weight: 600;
+}
+.experiencia .pacote-intro strong {
+  color: #141414;
+}
+
+#link {
+  color: #000000;
+  text-decoration: underline;
+}
+
+@media (max-width: 1300px) {
+  .titulo {
+    width: 800px;
+    grid-row: 1/1;
+    text-align: center;
+    word-break: initial;
+    font-size: 3rem;
+    margin: auto auto;
+  }
+
+  .experiencia .titulo {
+    color: #2b2b2b;
+  }
+  .painel {
+    margin: 80px auto;
+    max-width: 1015px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .pacote {
+    box-sizing: border-box;
+    width: 800px;
+    grid-column: 1;
+    justify-content: space-between;
+    grid-template-columns: 500px 250px;
+    margin: 20px auto;
+  }
+
+  .pacote-intro {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .pacote {
+    width: 580px;
+    margin: 0 auto;
+    grid-template-columns: 300px 250px;
+    gap: 10px;
+  }
+
+  .painel {
+    margin: 80px auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .titulo {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .painel {
+    width: 600px;
+  }
+  .pacote {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+  }
+  .mobile2 {
+    width: 500px;
+  }
+  .nome {
+    margin: 0px;
+  }
+}
+@media (max-width: 650px) {
+  .pacote-intro {
+    max-width: 450px;
+  }
+  .painel {
+    max-width: 450px;
+  }
+}
+@media (max-width: 550px) {
+  .mobile2 {
+    width: 400px;
+  }
+
+  .pacote {
+    margin: 20px 0px;
+  }
+
+  .painel,
+  .experiencia {
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  .mobile2 {
+    width: 300px;
+  }
+
+  .pacote {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 0px;
+
+    box-sizing: border-box;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+
+    padding: 20px;
+  }
+
+  .pacote ul {
+    gap: 2px 5px;
+  }
+
+  .pacote-intro {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .titulo {
+    width: 200px;
+    margin: 40 auto;
+  }
+
+  .experiencia {
+    max-width: 300px;
+  }
+}
