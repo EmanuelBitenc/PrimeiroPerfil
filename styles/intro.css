@@ -90,9 +90,12 @@
 
   .mobile2 {
     display: block;
-
-    width: 80%;
     margin: 40px auto;
+  }
+
+  .mobile2 img {
+    width: 100%;
+    margin: auto;
   }
 }
 @media (max-width: 500px) {
@@ -100,12 +103,19 @@
     width: 350px;
     margin: 0 auto;
   }
+
   .mobile2 {
-    margin: -40px auto 60px auto;
+    margin: 40px auto;
   }
 
   .titulo h2 {
     max-width: 200px;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .mobile2 {
+    margin: 0px auto;
   }
 }

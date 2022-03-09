@@ -58,6 +58,9 @@
 }
 
 @media (max-width: 500px) {
+  .header {
+    padding: 10px;
+  }
   .header-menu {
     gap: 5px;
     margin-top: 10px;

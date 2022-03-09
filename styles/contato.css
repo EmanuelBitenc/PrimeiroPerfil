@@ -44,7 +44,7 @@
   background: linear-gradient(180deg, #5076e9 0%, #193a9d 100%);
 
   position: absolute;
-  right: -10px;
+  right: -18px;
 }
 
 .contato-dado {
@@ -66,7 +66,7 @@ footer {
 }
 
 footer p {
-  font-size: 18px;
+  font-size: 0.8rem;
   line-height: 32px;
   color: #8f8f8f;
   text-align: center;
@@ -90,6 +90,13 @@ footer p {
     width: 700px;
     margin: 0 auto;
   }
+  .contato-dado {
+    justify-content: center;
+  }
+
+  .contato-links {
+    justify-content: center;
+  }
 
   .contato-menssagem {
     width: 300px;
@@ -100,6 +107,11 @@ footer p {
 
   .contato-dados::before {
     display: none;
+  }
+
+  footer p {
+    font-size: 0.6rem;
+    padding-bottom: 5px;
   }
 }
 
@@ -122,16 +134,5 @@ footer p {
   .contato-dados {
     width: 300px;
     font-size: 0.8rem;
-  }
-  .contato-dado {
-    justify-content: center;
-  }
-
-  .contato-links {
-    justify-content: center;
-  }
-  footer p {
-    font-size: 0.6rem;
-    padding-bottom: 5px;
   }
 }
